@@ -760,10 +760,11 @@ img {
 .modal-form {
     width: 448px;
     height: 342px;
+    margin-top: 12px;
 }
 
 .form-filed:first-child {
-    margin-top: 12px;
+    margin-top: 0px;
 }
 
 .form-filed {
