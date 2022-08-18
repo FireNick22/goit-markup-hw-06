@@ -791,18 +791,27 @@ img {
 .policy:checked + .form-label .check-icon {
     border-color: var(--accent-color);
     background-color: var(--accent-color);
-    background-image: url(../images/vector.svg);
-    background-position: center;
-    background-repeat: no-repeat;
+}
+
+.policy:checked + .form-label .policy-icon {
+    fill: #EEEEEE;
 }
 
 .check-icon {
+    display: flex;
     width: 16px;
     height: 15px;
     border: 2px solid #212121;
     border-radius: 2px;
+    background-origin: border-box;
+    justify-content: center;
+    align-items: center;
     margin-right: 7px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.policy-icon {
+    fill: transparent;
 }
 
 .form-label {
